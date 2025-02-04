@@ -17,7 +17,8 @@ import fs from "fs";
             })
             //file has been uploaded successfully
             console.log("file has been updated on cloudinary" , response.url);
-            return response
+            return response;
+            
         } catch (error) {
             fs.unlinkSync(localFilePath) // remove the locally save temporary file as the upload operation failed
             return null
@@ -26,4 +27,4 @@ import fs from "fs";
     }
 
 
-    
+    export {uploadOnCloudinary}
