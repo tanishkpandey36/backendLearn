@@ -3,7 +3,7 @@ import {changeCurrentPassword, getCurrentUser, getUsedChannelProofile, getWatchH
 import { upload } from "../middlewares/multer.middleware.js";
 import { validationUser } from "../validations/user.validations.js";
 import { verifyJWT } from "../middlewares/auth.middleware.js";
-import { verify } from "jsonwebtoken";
+
 
 const router = Router()
 
